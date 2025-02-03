@@ -1,4 +1,6 @@
 <?php
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recogemos los datos del formulario y los limpiamos para evitar inyecciones
     $name = htmlspecialchars(trim($_POST['name']));
