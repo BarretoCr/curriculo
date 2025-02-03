@@ -1,18 +1,34 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
+    // Recogemos los datos del formulario y los limpiamos para evitar inyecciones
+    $name = htmlspecialchars(trim($_POST['name']));
+    $email = htmlspecialchars(trim($_POST['email']));
+    $message = htmlspecialchars(trim($_POST['message']));
 
-    $to = "tuemail@ejemplo.com";  // Reemplaza con tu email
-    $subject = "Nuevo mensaje de $name";
-    $body = "Nombre: $name\nCorreo: $email\nMensaje:\n$message";
-    $headers = "From: $email";
+    // Verificamos que los campos no estén vacíos
+    if (!empty($name) && !empty($email) && !empty($message)) {
+        // Destinatario (puedes cambiar esto a tu correo)
+        $to = "tucorreo@ejemplo.com";
+        // Asunto del correo
+        $subject = "Nuevo mensaje de $name";
+        // Cuerpo del correo
+        $body = "Nombre: $name\nCorreo: $email\nMensaje:\n$message";
+        // Encabezados para el envío de correo
+        $headers = "From: $email";
 
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Mensaje enviado correctamente.";
+        // Intentamos enviar el correo
+        if (mail($to, $subject, $body, $headers)) {
+            echo "<h2>Mensaje enviado correctamente.</h2>";
+            echo "<p>Gracias por contactarnos, $name. Te responderemos a la brevedad.</p>";
+        } else {
+            echo "<h2>Error al enviar el mensaje.</h2>";
+            echo "<p>Por favor intenta nuevamente más tarde.</p>";
+        }
     } else {
-        echo "Error al enviar el mensaje.";
+        echo "<h2>Por favor completa todos los campos.</h2>";
     }
+} else {
+    // Si la petición no es POST, mostramos un error
+    echo "<h2>Solicitud no permitida.</h2>";
 }
 ?>
