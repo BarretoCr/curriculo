@@ -4,31 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de Vida - Cristiam Edwin Barreto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Cristiam Edwin Barreto Bustos</h1>
-        <p>Ingeniero de Sistemas | Especialista en Seguridad Informática | Maestría en Gestión de TI</p>
+
+    <!-- Menú de navegación superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cristiam E. Barreto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de presentación -->
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1>Cristiam Edwin Barreto Bustos</h1>
+            <p class="lead">Ingeniero de Sistemas | Especialista en Seguridad Informática | Maestría en Gestión de TI</p>
+            <a href="contact.html" class="btn btn-light btn-lg mt-3">Contáctame</a>
+        </div>
     </header>
 
-    <section class="about">
-        <h2>Sobre mí</h2>
-        <p>Ingeniero de sistemas con especialización en seguridad informática, cursando maestría en gestión de TI. Experiencia en programación, bases de datos, telecomunicaciones, y seguridad electrónica. Fuerte liderazgo y habilidades interpersonales.</p>
+    <!-- Sección "Sobre mí" -->
+    <section class="about py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Mí</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Soy un ingeniero de sistemas con especialización en seguridad informática, actualmente cursando una maestría en gestión de TI. Tengo una amplia experiencia en múltiples áreas como programación, bases de datos, telecomunicaciones, logística y seguridad electrónica. Mi capacidad de liderazgo, trabajo en equipo y adaptación al cambio me han permitido obtener excelentes resultados tanto en mi vida profesional como personal.</p>
+                </div>
+                <div class="col-lg-6">
+                    <p>He trabajado en varios roles de soporte, desarrollo y administración de sistemas en compañías importantes como **Corona** y **Brinks de Colombia**. Mis habilidades abarcan una variedad de lenguajes de programación y tecnologías, incluyendo PHP, Java, Python, MySQL, entre otros. Siempre estoy buscando superarme y seguir aprendiendo en un entorno en constante cambio como el de las tecnologías de la información.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="links">
-        <h2>Navega por mi Hoja de Vida</h2>
-        <ul>
-            <li><a href="education.html">Educación</a></li>
-            <li><a href="experience.html">Experiencia</a></li>
-            <li><a href="skills.html">Habilidades</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
+    <!-- Sección de enlaces a otras páginas -->
+    <section class="links bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Navega por Mi Hoja de Vida</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="education.html" class="btn btn-outline-success btn-lg w-100">Educación</a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="experience.html" class="btn btn-outline-success btn-lg w-100">Experiencia</a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="skills.html" class="btn btn-outline-success btn-lg w-100">Habilidades</a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="contact.html" class="btn btn-outline-success btn-lg w-100">Contacto</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Cristiam Edwin Barreto Bustos</p>
+    <!-- Sección de estadísticas o logros (opcional) -->
+    <section class="stats py-5 text-white" style="background-color: #333;">
+        <div class="container text-center">
+            <h2 class="mb-4">Logros y Experiencia</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h3>10+</h3>
+                    <p>Años de experiencia</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>50+</h3>
+                    <p>Proyectos completados</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>5</h3>
+                    <p>Títulos académicos</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>100%</h3>
+                    <p>Compromiso con la calidad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 Cristiam Edwin Barreto Bustos. Todos los derechos reservados.</p>
+        <a href="https://www.linkedin.com" class="text-white me-3">LinkedIn</a>
+        <a href="https://www.github.com" class="text-white">GitHub</a>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
