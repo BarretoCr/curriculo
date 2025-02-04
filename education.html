@@ -10,32 +10,49 @@
 </head>
 <body>
 
-    <!-- Encabezado -->
-    <header class="bg-success text-white text-center py-4">
-        <h1>Educación de Cristiam Edwin Barreto</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="experience.html">Experiencia</a></li>
-                        <li class="nav-item"><a class="nav-link" href="skills.html">Habilidades</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-                    </ul>
-                </div>
+    <!-- Menú de navegación superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Cristiam E. Barreto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="education.html">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <!-- Sección de presentación de educación -->
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1>Educación de Cristiam Edwin Barreto</h1>
+            <p class="lead">Formación académica y cursos especializados</p>
+        </div>
     </header>
 
-    <!-- Sección principal -->
-    <main class="container my-5">
-        <section class="education mb-5">
+    <!-- Sección de educación formal -->
+    <section class="formal-education py-5">
+        <div class="container">
             <h2 class="text-center mb-4">Formación Académica</h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Maestría en Gestión de TI</h5>
@@ -43,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Especialización en Seguridad Informática</h5>
@@ -51,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Ingeniero de Sistemas</h5>
@@ -59,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Tecnólogo en ADSI</h5>
@@ -67,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Técnico en Comercio Exterior</h5>
@@ -75,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Técnico en Sistemas</h5>
@@ -84,19 +101,21 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Sección de cursos no formales -->
-        <section class="non-formal-education mb-5">
+    <!-- Sección de educación no formal (cursos) -->
+    <section class="non-formal-education bg-light py-5">
+        <div class="container">
             <h2 class="text-center mb-4">Cursos y Formación No Formal</h2>
-            <div class="accordion" id="accordionExample">
+            <div class="accordion" id="accordionCourses">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             Cursos del Servicio Nacional de Aprendizaje (SENA)
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionCourses">
                         <div class="accordion-body">
                             <ul>
                                 <li>Contabilidad en las Organizaciones (2015)</li>
@@ -105,22 +124,9 @@
                                 <li>CRM – Administración del Cliente (2014)</li>
                                 <li>Administración y Control de Inventarios (2010)</li>
                                 <li>Atención al Cliente (2001)</li>
-                                <li>Administración de Negocios - Mentalidad Empresarial (2001)</li>
                                 <li>Prevención al Lavado de Activos (2008)</li>
-                                <li>Prevención del Fraude (2008)</li>
                                 <li>Técnicas de Comunicación en el Nivel Técnico, Operativo, Administrativo y Gerencial (2008)</li>
-                                <li>Creatividad para la Solución de Conflictos Laborales (2008)</li>
-                                <li>Caracterización del Sector Financiero (2008)</li>
-                                <li>Análisis Financiero (2008)</li>
                                 <li>Relaciones Humanas (2005)</li>
-                                <li>TLC Colombia - Estados Unidos (2012)</li>
-                                <li>Informática Básica y Avanzada (2001)</li>
-                                <li>Ensamble y Mantenimiento de Computadores (2008)</li>
-                                <li>Linux, Sistema Operativo, Comandos y Utilidad (2008)</li>
-                                <li>Arquitectura de Computadores (2008)</li>
-                                <li>Manejo de Herramientas Internet y Correo Electrónico (2008)</li>
-                                <li>Manejo de Herramientas Ofimáticas: Excel y Word (2008)</li>
-                                <li>Corel Draw y Photoshop (2007-2009)</li>
                                 <li>Programación de Dispositivos Móviles (2012)</li>
                                 <li>Controladores Lógicos Programables (2012)</li>
                             </ul>
@@ -130,10 +136,10 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Otros Cursos
+                            Otros Cursos Especializados
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionCourses">
                         <div class="accordion-body">
                             <ul>
                                 <li>Seminario Internacional Investigación e Innovación (UNAD, 2022)</li>
@@ -147,15 +153,16 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Pie de página -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Cristiam Edwin Barreto Bustos</p>
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 Cristiam Edwin Barreto Bustos. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
