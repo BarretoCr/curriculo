@@ -4,31 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiencia - Cristiam Edwin Barreto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Experiencia</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="education.html">Educación</a>
-            <a href="skills.html">Habilidades</a>
-            <a href="contact.html">Contacto</a>
-        </nav>
+
+    <!-- Menú de navegación superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Cristiam E. Barreto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="experience.html">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de presentación de experiencia -->
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1>Experiencia Laboral de Cristiam Edwin Barreto</h1>
+            <p class="lead">Historial de trabajo y funciones realizadas en cada cargo</p>
+        </div>
     </header>
 
-    <section class="experience">
-        <h2>Experiencia Laboral</h2>
-        <ul>
-            <li><strong>Controlador de Entregas</strong> - Corona (febrero 2016 - Actual)</li>
-            <li><strong>Analista de Soporte</strong> - Gatoloco Studios (agosto 2016 - agosto 2017)</li>
-            <li><strong>Coordinador Centro de Gestión</strong> - Centro de Comunicaciones Neiva (octubre 2014 - octubre 2016)</li>
-            <li><strong>Auxiliar de Soporte Operativo</strong> - Brinks de Colombia (junio 2007 - abril 2013)</li>
-        </ul>
+    <!-- Sección de experiencia laboral -->
+    <section class="experience py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Experiencia Laboral</h2>
+            
+            <!-- Cargo: Corona -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Controlador de Entregas (Torre de Control)</h5>
+                    <p class="card-text">Despachadora Internacional de Colombia (Corona) | Febrero 2016 - Actual</p>
+                    <p><strong>Teléfono:</strong> (1) 8789000</p>
+                    <p><strong>Funciones y logros:</strong></p>
+                    <ul>
+                        <li>Brindar soporte presencial y remoto a las diferentes operaciones y sedes de la organización.</li>
+                        <li>Solución de requerimientos en los sistemas de información (Unigis, Astrans, Recurso Confiable) y bases de datos (MySQL, SQL).</li>
+                        <li>Detección, reporte y corrección de fallas en código (HTML, PHP, Java) y conectividad.</li>
+                        <li>Manejo y soporte de operaciones logísticas a nivel local y nacional.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Cargo: Gatoloco Studios -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Analista de Soporte (Ingeniero de Sistemas)</h5>
+                    <p class="card-text">Gatoloco Studios | Agosto 2016 - Agosto 2017</p>
+                    <p><strong>Teléfono:</strong> 311 3090052 (Jorge Castellanos)</p>
+                    <p><strong>Funciones y logros:</strong></p>
+                    <ul>
+                        <li>Garantizar el buen funcionamiento de sistemas (páginas web, bases de datos, software) y equipos tecnológicos (computadores, redes, CCTV, biométricos, servidores).</li>
+                        <li>Brindar soporte técnico 24/7 y capacitación al personal sobre seguridad informática y uso de plataformas.</li>
+                        <li>Mantenimiento preventivo y correctivo de equipos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Cargo: Centro de Comunicaciones -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Coordinador Centro de Gestión</h5>
+                    <p class="card-text">Centro de Comunicaciones (Neiva) | Octubre 2014 - Octubre 2016</p>
+                    <p><strong>Teléfono:</strong> 8744472</p>
+                    <p><strong>Funciones y logros:</strong></p>
+                    <ul>
+                        <li>Seguimiento de rutas y personal técnico.</li>
+                        <li>Manejo de inventarios, monitoreo y soporte técnico de sistemas de seguridad (CCTV, comunicaciones, radio, enlaces remotos).</li>
+                        <li>Apoyo técnico al cliente interno y externo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Cargo: Brinks de Colombia -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Auxiliar de Soporte Operativo</h5>
+                    <p class="card-text">Brinks de Colombia (Bogotá) | Junio 2007 - Abril 2013</p>
+                    <p><strong>Teléfono:</strong> 091-4055060 / 4199696 (Recursos Humanos)</p>
+                    <p><strong>Funciones y logros:</strong></p>
+                    <ul>
+                        <li>Soporte técnico remoto para cajeros automáticos (configuración, fallas de comunicación y seguridad).</li>
+                        <li>Garantizar la seguridad y funcionamiento de los puntos ATM y sistemas de seguridad asociados.</li>
+                        <li>Control y seguimiento de personal en los puntos asignados.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Cargo: CMR Falabella -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Auxiliar Operativo</h5>
+                    <p class="card-text">CMR Falabella (Bogotá) | Diciembre 2005 - Junio 2007</p>
+                    <p><strong>Teléfono:</strong> 091 5924050 – 5924060 (Dra. Olga Rodríguez)</p>
+                    <p><strong>Funciones y logros:</strong></p>
+                    <ul>
+                        <li>Digitación, sistematización y control de la información.</li>
+                        <li>Manejo y captación de clientes en los puntos de venta.</li>
+                        <li>Verificación de documentos, colocación de créditos y recuperación de cartera.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Cargo: Papelería Herwill -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Auxiliar de Bodega</h5>
+                    <p class="card-text">Papelería Herwill | Octubre 2003 - Septiembre 2005</p>
+                    <p><strong>Teléfono:</strong> 098-8330793 (Wilson Herrera o María Victoria Obando)</p>
+                    <p><strong>Funciones y logros:</strong></p>
+                    <ul>
+                        <li>Manejo de bodega, inventarios y logística.</li>
+                        <li>Atención al cliente, ventas al detal y al por mayor, y manejo de mercancía.</li>
+                        <li>Supervisión de almacén y control de documentación (facturas, remisiones).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Cargo: Coomfamiliar del Huila -->
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Auxiliar Administrativo</h5>
+                    <p class="card-text">Coomfamiliar del Huila | Febrero 1999 - Junio 2001</p>
+                    <p><strong>Funciones y logros:</strong></p>
+                    <ul>
+                        <li>Entrega de papelería, radicación de documentos y manejo de inventarios.</li>
+                        <li>Apoyo en el área administrativa y comercial, cumpliendo con funciones designadas por el jefe inmediato.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Cristiam Edwin Barreto Bustos</p>
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 Cristiam Edwin Barreto Bustos. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
