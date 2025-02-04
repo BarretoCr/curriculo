@@ -4,32 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habilidades - Cristiam Edwin Barreto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Habilidades</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="education.html">Educación</a>
-            <a href="experience.html">Experiencia</a>
-            <a href="contact.html">Contacto</a>
-        </nav>
+
+    <!-- Menú de navegación superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Cristiam E. Barreto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="skills.html">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de presentación de habilidades -->
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1>Habilidades de Cristiam Edwin Barreto</h1>
+            <p class="lead">Experto en sistemas, programación, seguridad informática y más</p>
+        </div>
     </header>
 
-    <section class="skills">
-        <h2>Habilidades Técnicas</h2>
-        <ul>
-            <li>Programación en PHP, Java, C#, C++, Python</li>
-            <li>Manejo de bases de datos (MySQL, SQL)</li>
-            <li>Seguridad informática</li>
-            <li>Logística y telecomunicaciones</li>
-            <li>Atención al cliente</li>
-        </ul>
-    </section>
+    <!-- Sección con barra lateral y contenido principal -->
+    <div class="container-fluid py-5">
+        <div class="row">
+            <!-- Barra lateral -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#programming-skills">Habilidades de Programación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#database-skills">Manejo de Bases de Datos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#security-skills">Seguridad Informática</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#telecom-skills">Telecomunicaciones y Redes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#languages">Idiomas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#soft-skills">Habilidades Blandas</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-    <footer>
-        <p>&copy; 2025 Cristiam Edwin Barreto Bustos</p>
+            <!-- Contenido principal -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <!-- Habilidades de Programación -->
+                <section id="programming-skills" class="mb-5">
+                    <h2 class="mb-3">Habilidades de Programación</h2>
+                    <p>Cristiam Edwin Barreto posee una sólida formación en varios lenguajes de programación, lo que le permite desarrollar aplicaciones y soluciones de software con una alta eficiencia. A continuación se muestran algunos de los lenguajes y tecnologías que domina:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">PHP</li>
+                        <li class="list-group-item">Java</li>
+                        <li class="list-group-item">C#</li>
+                        <li class="list-group-item">C++</li>
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">Pseint (Algoritmos)</li>
+                        <li class="list-group-item">HTML, CSS, JavaScript</li>
+                    </ul>
+                </section>
+
+                <!-- Manejo de Bases de Datos -->
+                <section id="database-skills" class="mb-5">
+                    <h2 class="mb-3">Manejo de Bases de Datos</h2>
+                    <p>Con amplia experiencia en la gestión de bases de datos, Cristiam es capaz de diseñar, implementar y mantener sistemas de bases de datos robustos y eficientes.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">MySQL</li>
+                        <li class="list-group-item">SQL Server</li>
+                    </ul>
+                </section>
+
+                <!-- Seguridad Informática -->
+                <section id="security-skills" class="mb-5">
+                    <h2 class="mb-3">Seguridad Informática</h2>
+                    <p>Como especialista en seguridad informática, Cristiam ha trabajado en la implementación de medidas de protección para redes y sistemas de información, garantizando la integridad y la confidencialidad de los datos.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Sistemas de Seguridad Electrónica</li>
+                        <li class="list-group-item">Detección y Mitigación de Vulnerabilidades</li>
+                        <li class="list-group-item">Prevención de Fraude y Lavado de Activos</li>
+                        <li class="list-group-item">Sistemas de alarmas y seguridad física</li>
+                    </ul>
+                </section>
+
+                <!-- Telecomunicaciones y Redes -->
+                <section id="telecom-skills" class="mb-5">
+                    <h2 class="mb-3">Telecomunicaciones y Redes</h2>
+                    <p>Cristiam cuenta con experiencia en telecomunicaciones y redes, cubriendo aspectos como la configuración, mantenimiento y monitoreo de sistemas de comunicación y redes de datos.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Redes y Medios de Transmisión</li>
+                        <li class="list-group-item">CCTV y Seguridad Electrónica</li>
+                        <li class="list-group-item">Enlaces de Comunicación Remota</li>
+                        <li class="list-group-item">Configuración y mantenimiento de equipos de telecomunicaciones</li>
+                    </ul>
+                </section>
+
+                <!-- Idiomas -->
+                <section id="languages" class="mb-5">
+                    <h2 class="mb-3">Idiomas</h2>
+                    <p>Cristiam Edwin Barreto es bilingüe, con fluidez en los siguientes idiomas:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Español (Lengua Nativa)</li>
+                        <li class="list-group-item">Inglés (Hablado y Escrito)</li>
+                    </ul>
+                </section>
+
+                <!-- Habilidades Blandas -->
+                <section id="soft-skills" class="mb-5">
+                    <h2 class="mb-3">Habilidades Blandas</h2>
+                    <p>Además de sus competencias técnicas, Cristiam destaca por sus habilidades interpersonales que le permiten liderar equipos y adaptarse a entornos cambiantes.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Liderazgo y Trabajo en Equipo</li>
+                        <li class="list-group-item">Adaptabilidad y Proactividad</li>
+                        <li class="list-group-item">Excelentes Relaciones Interpersonales</li>
+                        <li class="list-group-item">Capacidad para trabajar bajo presión</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 Cristiam Edwin Barreto Bustos. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
